@@ -1,0 +1,17 @@
+// src/scss/main.scss
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "./variables/vars";
+@import "./components/navbar";
+@import "./components/heroes.scss"
+
+/* $primary-color: #ff5733;
+
+body {
+  background-color: $primary-color;
+  color: white;
+}
+ */

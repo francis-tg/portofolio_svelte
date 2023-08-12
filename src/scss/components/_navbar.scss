@@ -1,0 +1,73 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: $primary-color;
+	.navbar-item,
+	.navbar-brand {
+		padding: 15px 5px;
+		a {
+			color: white;
+			text-decoration: none;
+			padding: 10px;
+		}
+	}
+	.navbar-item {
+		a {
+			border-radius: 8px;
+            transition: background-color .5s ease-in-out;
+			&:hover {
+				background-color: white;
+				color: $primary-color;
+			}
+		}
+	}
+    .navbar-brand{
+        a span{
+            background-color: $secondary-color;
+            padding: 10px;
+            border-radius: 8px;
+            color: $primary-color;
+            margin:0 5px;
+        }
+    }
+}
+@media screen and (max-width:780px) {
+    nav{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        z-index: 150;
+        .navbar-brand{
+            position: relative;
+            //margin-left: 10px;
+           /*  &::before{
+                content: url(../img/menu.svg);
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: -10px;
+                cursor: pointer;
+            } */
+            &:hover ~ .navbar-item{
+                 display: flex;
+                 transition: display .5s ease-in-out;
+            }
+        }
+        .navbar-item{
+            display: none;
+            flex-direction: column;
+            transition: display .5s ease-in-out;
+            position: absolute;
+            top: 45px;
+            width: 100%;
+            height:180px;
+            z-index: 100;
+            background-color: $primary-color;
+            &:hover{
+                display: flex;
+            }
+        }
+    }
+}
