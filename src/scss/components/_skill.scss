@@ -1,0 +1,74 @@
+.skill-container{
+    position: absolute;
+    padding: 50px;
+    width: 100%;
+    
+    .content{
+         background-color: white;
+         padding: 50px;
+         border-radius: 10px;
+         .languages,.frameworks,.databases{
+            padding: 20px;
+            .content{
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+                gap: 10px;
+                padding: 10px;
+                .skill-item{
+                    background: #c4c4c4;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 10px;
+                    border-radius: 10px;
+                }
+            }
+         }
+         
+    }
+}
+
+@media screen and (max-width:780px) {
+    .skill-container{
+    .content{
+         .languages,.frameworks,.databases{
+            .content{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 10px;
+            }
+         }
+         
+    }
+}
+}
+@media screen and (max-width:500px) {
+    .skill-container{
+    .content{
+         .languages,.frameworks,.databases{
+            .content{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 10px;
+            }
+         }
+         
+    }
+}
+}
+@media screen and (min-width:512px) and (max-width:770px)  {
+    .skill-container{
+    .content{
+         .languages,.frameworks,.databases{
+            .content{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 10px;
+            }
+         }
+         
+    }
+}
+}

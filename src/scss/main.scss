@@ -4,9 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import "./icons/fontawesome";
 @import "./variables/vars";
 @import "./components/navbar";
-@import "./components/heroes.scss"
+@import "./components/heroes";
+@import "./components/skill";
+
 
 /* $primary-color: #ff5733;
 
